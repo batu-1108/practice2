@@ -1,0 +1,500 @@
+リセットCSS
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+}
+
+header img {
+    width: 100px;
+    height: 50px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+    
+
+
+.fas {
+    color: aliceblue;
+    background-color: rgb(231, 12, 12);
+    padding: 25px;
+}
+
+
+.fas{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.drawer-btn:checked ~ .menu{
+    transform: translateY(0%);
+}
+
+.menu{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+
+    text-align: center;
+    background-color: red; 
+    padding-right: 0;
+    transform: translateY(-245%);  
+    transition: 0.3s;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+}
+
+.menu ul{
+    padding: 80px;
+    font-size: 20px;
+    line-height: 40px;
+    list-style: none;
+}
+
+.menu li a{
+    color: #ffffff;
+}
+
+.menu h2 a{
+    border: solid #ffffff 5px;
+    padding: 20px 40px;
+    color: #ffffff;
+}
+
+.drawer-btn{
+    transform: scale(14);
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.contents{
+    width: 100%;
+    padding-top: 100px;
+}
+
+.main-img{
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-img img{
+    opacity: 0;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: anime 30s 0s infinite;
+    animation: anime 30s 0s infinite;
+}
+
+img:nth-of-type(2){
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+img:nth-of-type(3){
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+}
+
+/*アニメーション*/
+@keyframes anime {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+        z-index: 9;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes anime{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+        z-index: 9;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.main-img h1{
+    padding-top: 200px;
+    margin-left: 100px;
+    font-size: 30px;
+    z-index: 10;
+    position: relative;
+    line-height: 40px;
+}
+
+.main-img p a{
+    position: absolute;
+    margin-left: 100px;
+    background-color: red;
+    padding: 10px 40px;
+    z-index: 90;
+    color: #ffffff;
+}
+
+.main-img p a:hover{
+    background-color: #ffffff;
+    color: red;
+    border: solid red 3px;
+}
+
+.good-place{
+    padding-top: 60px;
+}
+
+.good-place h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+}
+
+.good-place-contents{
+    background-color: red;
+    height: 620px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.good-place-contents1{
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px 10px;
+    height: 200px;
+    width: 50%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.good-place-contents1 h2{
+    color: red;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.good-place-contents1 p{
+    font-size: 20px;
+}
+
+.good-place-contents2{
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px 10px;
+    height: 200px;
+    width: 50%;
+    float: right;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.good-place-contents2 h2{
+    color: red;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.good-place-contents2 p{
+    font-size: 20px;
+}
+
+.opinion{
+    padding-bottom: 40px; 
+}
+
+.opinion-item{
+    text-align: center;
+
+    flex-direction: row;
+}
+
+.opinion-icon img{
+    background-color: #cccccc ;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+}
+
+.opinion-icon {
+    position: relative;
+    top: 180px;
+    left: 180px;
+    height: 170px;
+    width: 150px;
+}
+
+.opinion-speech {
+    height: 140px;
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+    border-radius: 10px 10px;
+  }
+  
+  .opinion-speech:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+  
+  .opinion-speech p {
+    padding-top: 50px;
+  }
+
+  .opinion h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+}
+
+.overview h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+}
+
+.overview{
+    background-color: gray;
+    background-image: url(bg.gif);
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.overview-item{
+    width: 35%;
+    margin: 20px 20px;
+    background-color: rgb(248, 244, 244);
+    height: 280px;
+    border-radius: 10px 10px;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.overview-item h3{
+    font-size: 25px;
+}
+
+.overview-item h4{
+    font-size: 20px;
+}
+
+.overview-item p{
+    line-height: 25px;
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.message h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+    margin-top: 70px;
+}
+
+.message p{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.button p a{
+    font-size: 30px;
+    background-color: #ff0606;
+    color: aliceblue;
+    margin-top: 30px;
+    padding: 10px 60px;
+    border-radius: 10px 10px;
+}
+
+.button p a:hover{
+    color: red;
+    background-color: white;
+    border: solid red;
+    border-radius: 10px 10px;
+}
+
+footer{
+    margin-top: 70px;
+    padding: 30px;
+    background-color: rgb(214, 209, 209);
+}
+
+.footer-contents{
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-item{
+    text-align: center;
+    width: 15%;
+    line-height: 30px;
+}
+
+.footer-item ul{
+    padding-bottom: 20px;
+}
+
+.footer-item li{
+    list-style: none;
+    font-size: 12px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    text-align: center;
+    font-size: 10px;
+}
+
