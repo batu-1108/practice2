@@ -1,0 +1,64 @@
+@media(max-width:780px){
+    .header-nav{
+        display: none;
+    }
+    .contents{
+        width: 100%;
+    }
+}
+
+@media(max-width:640px){
+    .contents-wrapper{
+        overflow: hidden;
+    }
+    body{
+        width: 100%;
+        padding: 0;
+    }
+
+    .good-place-contents1{
+        width: 90%;
+        height: 80px;
+    }
+
+    .good-place-contents2{
+        width: 90%;
+        height: 80px;
+    }
+
+    .good-place-contents{
+        height: 350px;
+    }
+
+
+    .overview-item{
+        width: 90%;
+        height: 160px;
+    }
+    .button p a{
+        width: 70%;
+        font-size: 20px;
+    }
+
+    .overview h1{
+        padding-left: 0;
+    }
+
+    .opinion-item{
+        display: flex;
+        padding-top: 100px;
+        margin-left: 0px;
+    }
+
+    .opinion-icon{
+        position: static;
+        float: left;
+    }
+
+    .opinion-speech {
+        margin-left: 0;
+    }
+
+
+
+}
