@@ -5,6 +5,24 @@
     .contents{
         width: 100%;
     }
+    
+    @media(max-width:780px){
+    .header-nav{
+        display: none;
+    }
+    .contents{
+        width: 100%;
+    }
+
+    .footer-contents{
+        display: block;
+        width: 100%;
+    }
+
+    .footer-item{
+        width: 100%;
+    }
+}
 }
 
 @media(max-width:640px){
